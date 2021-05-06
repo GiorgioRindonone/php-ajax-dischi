@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://kit.fontawesome.com/0ae8af7e4e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Dischi</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+
+      <div class="container">
+        <select class="" name="genres" v-model="genre">
+          <option value="tutti">tutti</option>
+          <option value="pop">pop</option>
+          <option value="rock">rock</option>
+          <option value="metal">metal</option>
+          <option value="metal"></option>
+
+        </select>
+          <button type="button" name="button" @click="filterGenre()">cerca</button>
+      </div>
+      <div class="cds-container container">
+        <?php foreach ($database as $album) {?>
+
+          <div class="cd" v-for='album in albums'>
+            <img :src="album.poster" :alt="album.title">
+            <h3>{{album.title}}</h3>
+            <span class="author">{{album.author}}</span>
+            <span class="year">{{album.year}}</span>
+          </div>
+
+        <?php }  ?>
+
+      </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/0ae8af7e4e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
