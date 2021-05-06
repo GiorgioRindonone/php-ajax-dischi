@@ -4,7 +4,7 @@ var app = new Vue ({
     albums: [],
     genre: ''
   },
-  methods:{
+  methods: {
     filterGenre: function () {
       axios.get('http://localhost/php-ajax-dischi/api.php', {
         params: {
@@ -13,6 +13,7 @@ var app = new Vue ({
       })
       .then( (response) => {
         this.albums = response.data.response;
+      });
     }
   },
   mounted: function() {
