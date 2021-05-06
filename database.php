@@ -1,5 +1,5 @@
 <?php
-  $database:[
+  $database = [
 
     [
       "poster"=>"https:\/\/www.onstageweb.com\/wp-content\/uploads\/2018\/09\/bon-jovi-new-jersey.jpg",
@@ -18,11 +18,12 @@
     [
       "poster"=>"https:\/\/images-na.ssl-images-amazon.com\/images\/I\/41JD3CW65HL.jpg",
       "title"=>"Ten's Summoner's Tales",
-      "author"=>"Sting","genre":"Pop",
+      "author"=>"Sting",
+      "genre" => "Pop",
       "year"=>"1993"],
 
     [
-      "poster":"https:\/\/cdn2.jazztimes.com\/2018\/05\/SteveGadd-800x723.jpg",
+      "poster"=> "https:\/\/cdn2.jazztimes.com\/2018\/05\/SteveGadd-800x723.jpg",
       "title"=>"Steve Gadd Band",
       "author"=>"Steve Gadd Band",
       "genre"=>"Jazz",
