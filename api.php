@@ -15,7 +15,7 @@ if ( !empty($genre) ) {
       $categories[] = $album;
     }
   }
-  
+
   $database = $categories;
 }
 
